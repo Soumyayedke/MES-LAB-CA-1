@@ -1,0 +1,12 @@
+ORG 0000H
+
+; Initialize RAM
+MOV 30H,#41H
+MOV 41H,#99H
+
+; Direct addressing
+MOV A,30H
+MOV R7,A
+
+HERE: SJMP HERE
+END
